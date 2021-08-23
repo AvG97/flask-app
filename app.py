@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from flask import Flask, render_template
 import json
 import plotly
@@ -18,3 +17,5 @@ def ndash():
 	
 	return render_template("ndash.html", graphJSON=graphJSON)
 	
+if __name__ == "__main__":
+	app.run()
