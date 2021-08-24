@@ -7,18 +7,33 @@
         <meta name="author", content="Avi">
         <meta name="keywords", content="Graph, flask, plotly">
 	<title> Graph Page </title>
+	<link rel="stylesheet", href="/static/style.css">
 	<link rel="icon", href="/static/favicon.png">
 	</head>
-	<body style="font-family:arial, sans-serif">
-    		<h1>Plotly chart</h1>
-    		<h3><a href="/">Return to index page</a></h3>
-    		<div id="chart" class="chart"></div>
-    		<div> This is a Plotly Chart </div>
+	<body>
+		<header>
+			<div id="branding">
+				<h1><span class="highlight"> Plotly chart </span></h1>
+			</div>
+			<div class="container">
+				<nav>
+					<ul>
+    						<li><h3><a href="/"> Return to index page </a></h3></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="showcase1">
+    			<div id="chart" class="chart"></div>
+		</section>
+		<footer>
+			<p> This is a Plotly Chart </p>
+		</footer>
 	</body>
 
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script type="text/javascript">
-    	var graphs = {{graphJSON | safe}};
-    	Plotly.plot('chart',graphs,{});        
+    		var graphs = {{graphJSON | safe}};
+    		Plotly.plot('chart',graphs,{});        
 	</script>
 </html>
