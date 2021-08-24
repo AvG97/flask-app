@@ -12,6 +12,13 @@ body{
   overflow:hidden;
 }
 
+/* Global */
+.graph1{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
 ul{
   margin:0;
   padding:0;
@@ -34,7 +41,7 @@ ul{
   margin-bottom:10px;
 }
 
-/* Header **/
+/* Header */
 header{
   background:#35424a;
   color:#ffffff;
@@ -209,6 +216,10 @@ footer{
   }
 
   #showcase h1{
+    margin-top:40px;
+  }
+
+  #showcase1 h1{
     margin-top:40px;
   }
 
